@@ -1,0 +1,38 @@
+2024-05-16 17:15:30 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+2024-05-16 17:15:35 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+2024-05-16 17:15:35 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+2024-05-16 17:15:36 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+2024-05-16 17:15:36 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+2024-05-16 17:15:36 | INFO | fairseq.distributed.utils | distributed init (rank 0): tcp://localhost:15290
+W0516 17:15:37.217393 140325466989568 torch/multiprocessing/spawn.py:145] Terminating process 1753001 via signal SIGTERM
+W0516 17:15:37.218103 140325466989568 torch/multiprocessing/spawn.py:145] Terminating process 1753003 via signal SIGTERM
+W0516 17:15:37.218208 140325466989568 torch/multiprocessing/spawn.py:145] Terminating process 1753004 via signal SIGTERM
+Traceback (most recent call last):
+  File "/local/musaeed/anaconda3/envs/fairseq2/bin/fairseq-train", line 8, in <module>
+    sys.exit(cli_main())
+  File "/local/musaeed/anaconda3/envs/fairseq2/lib/python3.8/site-packages/fairseq_cli/train.py", line 557, in cli_main
+    distributed_utils.call_main(cfg, main)
+  File "/local/musaeed/anaconda3/envs/fairseq2/lib/python3.8/site-packages/fairseq/distributed/utils.py", line 344, in call_main
+    torch.multiprocessing.spawn(
+  File "/local/musaeed/anaconda3/envs/fairseq2/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 281, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+  File "/local/musaeed/anaconda3/envs/fairseq2/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 237, in start_processes
+    while not context.join():
+  File "/local/musaeed/anaconda3/envs/fairseq2/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 188, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 1 terminated with the following error:
+Traceback (most recent call last):
+  File "/local/musaeed/anaconda3/envs/fairseq2/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 75, in _wrap
+    fn(i, *args)
+  File "/local/musaeed/anaconda3/envs/fairseq2/lib/python3.8/site-packages/fairseq/distributed/utils.py", line 318, in distributed_main
+    torch.cuda.set_device(cfg.distributed_training.device_id)
+  File "/local/musaeed/anaconda3/envs/fairseq2/lib/python3.8/site-packages/torch/cuda/__init__.py", line 399, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+

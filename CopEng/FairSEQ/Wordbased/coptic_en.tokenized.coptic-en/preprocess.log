@@ -1,0 +1,14 @@
+Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='/local/musaeed/From-Nile-s-Bank-to-Digital-Hand/CopEng/FairSEQ/Wordbased/coptic_en.tokenized.coptic-en', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='coptic', srcdict=None, suppress_crashes=False, target_lang='en', task='translation', tensorboard_logdir=None, testpref='/local/musaeed/From-Nile-s-Bank-to-Digital-Hand/CopEng/Dataset/test/test', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='/local/musaeed/From-Nile-s-Bank-to-Digital-Hand/CopEng/Dataset/train/train', use_plasma_view=False, user_dir=None, validpref='/local/musaeed/From-Nile-s-Bank-to-Digital-Hand/CopEng/Dataset/val/val', wandb_project=None, workers=1)
+[coptic] Dictionary: 57984 types
+[coptic] /local/musaeed/From-Nile-s-Bank-to-Digital-Hand/CopEng/Dataset/train/train.coptic: 19380 sents, 282883 tokens, 0.0% replaced (by <unk>)
+[coptic] Dictionary: 57984 types
+[coptic] /local/musaeed/From-Nile-s-Bank-to-Digital-Hand/CopEng/Dataset/val/val.coptic: 2422 sents, 35415 tokens, 13.8% replaced (by <unk>)
+[coptic] Dictionary: 57984 types
+[coptic] /local/musaeed/From-Nile-s-Bank-to-Digital-Hand/CopEng/Dataset/test/test.coptic: 2424 sents, 35438 tokens, 13.8% replaced (by <unk>)
+[en] Dictionary: 25328 types
+[en] /local/musaeed/From-Nile-s-Bank-to-Digital-Hand/CopEng/Dataset/train/train.en: 19380 sents, 475096 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 25328 types
+[en] /local/musaeed/From-Nile-s-Bank-to-Digital-Hand/CopEng/Dataset/val/val.en: 2422 sents, 59727 tokens, 2.73% replaced (by <unk>)
+[en] Dictionary: 25328 types
+[en] /local/musaeed/From-Nile-s-Bank-to-Digital-Hand/CopEng/Dataset/test/test.en: 2424 sents, 59506 tokens, 2.65% replaced (by <unk>)
+Wrote preprocessed data to /local/musaeed/From-Nile-s-Bank-to-Digital-Hand/CopEng/FairSEQ/Wordbased/coptic_en.tokenized.coptic-en
